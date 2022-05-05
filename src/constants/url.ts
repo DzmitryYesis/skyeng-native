@@ -1,0 +1,1 @@
+export const logoTeacher = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCwUKaPG-4cetM-yy77eVEgWKHGTQZwx6YDA&usqp=CAU';

@@ -78,7 +78,9 @@ export default function App() {
           <Image source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBa8VqE2seqnflcLxpVJe87_tNDI6h8_Olpg&usqp=CAU'}} style={{width: 20, height: 20, marginTop: 15}}/>
         </View>
       </View>
+      <View style={{height: 210, width: '100%'}}>
       <FlatList data={DATA} renderItem={block} horizontal={true}/>
+      </View>
       <StatusBar style="auto" />
     </View>
   );

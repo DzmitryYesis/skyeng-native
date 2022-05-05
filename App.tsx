@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import {NextLesson} from './src/components/NextLesson/NextLesson';
 import {Dictionary} from './src/components/Dictionary/Dictionary';
-import {Situation} from './src/components/situation/Situation';
+import {Situation} from './src/components/Situation/Situation';
 import {Menu} from './src/components/Menu/Menu';
 
 

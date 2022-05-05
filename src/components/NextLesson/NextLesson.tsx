@@ -6,8 +6,8 @@ export const NextLesson = () => (
     <View style={styles.wrapper}>
         <Image source={{uri: logoTeacher}} style={styles.image}/>
         <View style={styles.body}>
-                <Text style={{fontSize: 20, fontWeight: '500'}}>English, Elena</Text>
-                <Text style={{fontSize: 20, fontWeight: '700'}}>Tomorrow, 14:00</Text>
+            <Text style={{fontSize: 20, fontWeight: '500'}}>English, Elena</Text>
+            <Text style={{fontSize: 20, fontWeight: '700'}}>Tomorrow, 14:00</Text>
         </View>
         <View>
             <Text onPress={() => {

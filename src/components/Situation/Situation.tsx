@@ -1,20 +1,11 @@
-import {FlatList, Text, TouchableOpacity, View} from 'react-native';
+import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {DATA_SITUATIONS} from '../../state/situationsState';
 import {blockSituation} from '../../flatListFunction/situation';
 
 export const Situation = () => (
     <View style={{width: '90%'}}>
-        <View style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginTop: 20,
-            width: '100%'
-        }}>
-            <Text style={{fontSize: 25, fontWeight: '700'}}>
-                Ситуации
-            </Text>
+        <View style={styles.head}>
+            <Text style={{fontSize: 25, fontWeight: '700'}}>Ситуации</Text>
             <TouchableOpacity onPress={() => {
                 alert('Страница в разработке')
             }}>
@@ -29,3 +20,14 @@ export const Situation = () => (
         </View>
     </View>
 )
+
+const styles = StyleSheet.create({
+    head: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 20,
+        width: '100%'
+    }
+})

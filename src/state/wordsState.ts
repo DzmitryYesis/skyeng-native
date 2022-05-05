@@ -20,7 +20,7 @@ export const DATA_WORDS: DataWordsType[] = [
         id: 2,
         text: 'Слова, добавленые из браузера',
         numberOfWords: 7,
-        color: '#3cd98a',
+        color: '#08ad4a',
         picture: WORD.browser
     },
     {

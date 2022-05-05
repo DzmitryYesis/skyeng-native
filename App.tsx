@@ -3,50 +3,21 @@ import {
     Button,
     FlatList,
     Image,
-    ListRenderItem,
     StyleSheet,
     Text,
     TextInput, TouchableOpacity,
     View
 } from 'react-native';
-import {DATA_WORDS, DataWordsType} from './src/state/wordsState';
-import {DATA_SITUATIONS, DataSituationsType} from './src/state/situationsState';
+import {DATA_WORDS} from './src/state/wordsState';
+import {DATA_SITUATIONS} from './src/state/situationsState';
+import {blockWords} from './src/flatListFunction/word';
+import {blockSituation} from './src/flatListFunction/situation';
 
 const logoTeacher = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSk_ezlPG6XlRkE4s3mGcAov4_MnRDsvbWNg&usqp=CAU';
 
 
 export default function App() {
 
-    const blockWords: ListRenderItem<DataWordsType> = ({item}) => (
-        <View style={{
-            backgroundColor: '#e50fa8',
-            width: 200,
-            height: 200,
-            borderRadius: 20,
-            margin: 5,
-            padding: 10
-        }}>
-            <Text>{item.text}</Text>
-        </View>
-    )
-
-    const blockSituation: ListRenderItem<DataSituationsType> = ({item}) => (
-        <View style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            width: 150,
-            height: 150,
-            marginTop: 10,
-            padding: 10
-        }}>
-            <Image source={{uri: item.logo}}
-                   style={{height: '70%', width: '100%', borderRadius: 10}}/>
-            <Text>{item.title}</Text>
-            <Text>{item.numberOfLessons} lessons</Text>
-        </View>
-    )
 
     return (
         <View style={styles.container}>

@@ -8,7 +8,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TextInput,
+  TextInput, TouchableOpacity,
   View
 } from 'react-native';
 
@@ -81,6 +81,9 @@ export default function App() {
       <View style={{height: 210, width: '100%'}}>
       <FlatList data={DATA} renderItem={block} horizontal={true}/>
       </View>
+      <TouchableOpacity style={{backgroundColor: '#d2d1d1', marginTop: 15, height: 50, width: '90%', borderRadius: 10, alignItems: 'center', justifyContent: 'center'}} onPress={()=>{alert('Словарь находится в разработке')}}>
+        <Text style={{fontSize: 20, fontWeight: '600'}}>Словарь</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );

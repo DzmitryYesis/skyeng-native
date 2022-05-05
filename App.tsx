@@ -1,5 +1,6 @@
 import {StatusBar} from 'expo-status-bar';
 import {
+    Button,
     FlatList,
     Image,
     ListRenderItem,
@@ -225,7 +226,22 @@ export default function App() {
                 </TouchableOpacity>
             </View>
             <View style={{height: 200, width: '100%'}}>
-                <FlatList data={DATA_SITUATIONS} renderItem={blockSituation} horizontal={true}/>
+                <FlatList data={DATA_SITUATIONS} renderItem={blockSituation}
+                          horizontal={true}/>
+            </View>
+            <View style={{display: 'flex', flexDirection: 'row', margin: 10}}>
+                <Button title={'Home'} onPress={() => {
+                    alert('Страница в разработке')
+                }}/>/
+                <Button title={'Homeworks'} onPress={() => {
+                    alert('Страница в разработке')
+                }}/>/
+                <Button title={'Messages'} onPress={() => {
+                    alert('Страница в разработке')
+                }}/>/
+                <Button title={'Profile'} onPress={() => {
+                    alert('Страница в разработке')
+                }}/>/
             </View>
             <StatusBar style="auto"/>
         </View>

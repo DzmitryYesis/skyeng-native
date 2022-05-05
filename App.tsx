@@ -1,9 +1,53 @@
 import { StatusBar } from 'expo-status-bar';
-import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
+import {
+  Alert,
+  Button,
+  FlatList,
+  Image,
+  ListRenderItem,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View
+} from 'react-native';
 
 const logoTeacher = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSk_ezlPG6XlRkE4s3mGcAov4_MnRDsvbWNg&usqp=CAU';
 
+type DataType = {
+  id: number,
+  text: string
+}
+
+const DATA: DataType[] = [
+  {
+    id: 1,
+    text: 'Слова для следующего урока'
+  },
+  {
+    id: 2,
+    text: 'Слова, добавленые из браузера'
+  },
+  {
+    id: 3,
+    text:'Слова, которые необходимо повторить'
+  },
+  {
+    id: 4,
+    text: 'Слова из последнего урока'
+  }
+]
+
+
+
 export default function App() {
+
+  const block: ListRenderItem<DataType> = ({item})=>(
+      <View style={{backgroundColor: '#e50fa8', width: 200, height: 200, borderRadius: 20, margin: 5, padding:10}}>
+        <Text>{item.text}</Text>
+      </View>
+  )
+
   return (
     <View style={styles.container}>
       <TextInput style={styles.findWords}  placeholder={'Поиск слов'}/>
@@ -34,6 +78,7 @@ export default function App() {
           <Image source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBa8VqE2seqnflcLxpVJe87_tNDI6h8_Olpg&usqp=CAU'}} style={{width: 20, height: 20, marginTop: 15}}/>
         </View>
       </View>
+      <FlatList data={DATA} renderItem={block} horizontal={true}/>
       <StatusBar style="auto" />
     </View>
   );

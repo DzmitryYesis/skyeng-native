@@ -28,7 +28,9 @@ export const Dictionary = () => (
                 </View>
             </View>
             <View>
-                <TouchableOpacity onPress={()=>{alert('Настройки параметров изучения слов временно недоступны.')}}>
+                <TouchableOpacity onPress={() => {
+                    alert('Настройки параметров изучения слов временно недоступны.')
+                }}>
                     <Image
                         source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBa8VqE2seqnflcLxpVJe87_tNDI6h8_Olpg&usqp=CAU'}}
                         style={{width: 20, height: 20, marginTop: 15}}/>

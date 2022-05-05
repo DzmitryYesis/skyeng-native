@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, TextInput, View} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <TextInput style={styles.findWords} placeholder={'Поиск слов'}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +13,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'center',
   },
+  findWords:{
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  }
 });

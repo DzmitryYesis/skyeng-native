@@ -11,7 +11,7 @@ export default function App() {
         <Image source={{uri:logoTeacher}} style={{height: '80%', width: 100, borderRadius: 50, marginTop: 10}}/>
         <View style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'flex-start', width: '60%'}}>
           <View>
-            <Text style={{fontSize: 20}}>Английский, Котоморда</Text>
+            <Text style={{fontSize: 20}}>Английский, Кот</Text>
           </View>
           <View>
             <Text style={{fontSize: 20, fontWeight: '700'}}>Завтра, 14:00</Text>
@@ -19,6 +19,19 @@ export default function App() {
         </View>
         <View style={{marginTop: 20}}>
           <Text style={{fontSize: 20}}>...</Text>
+        </View>
+      </View>
+      <View style={{marginTop: 25, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '90%', height: 80}}>
+        <View style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start', width: '80%'}}>
+          <View>
+            <Text style={{fontSize: 30, fontWeight: '900'}}>Изучение слов</Text>
+          </View>
+          <View>
+            <Text style={{fontSize: 20}}>0 из 6 упражнений</Text>
+          </View>
+        </View>
+        <View>
+          <Image source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBa8VqE2seqnflcLxpVJe87_tNDI6h8_Olpg&usqp=CAU'}} style={{width: 20, height: 20, marginTop: 15}}/>
         </View>
       </View>
       <StatusBar style="auto" />

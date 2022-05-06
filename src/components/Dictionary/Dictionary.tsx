@@ -24,7 +24,8 @@ export const Dictionary = () => (
             </View>
         </View>
         <View style={{height: 210, width: '100%'}}>
-            <FlatList data={DATA_WORDS} renderItem={blockWords} horizontal={true}/>
+            <FlatList data={DATA_WORDS} renderItem={blockWords}
+                      keyExtractor={(item) => item.id} horizontal={true}/>
         </View>
         <TouchableOpacity style={styles.button} onPress={() => {
             alert('Словарь находится в разработке')

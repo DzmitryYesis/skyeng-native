@@ -16,6 +16,7 @@ export const Situation = () => (
         </View>
         <View style={{height: 200, width: '100%'}}>
             <FlatList data={DATA_SITUATIONS} renderItem={blockSituation}
+                      keyExtractor={(item) => item.id}
                       horizontal={true}/>
         </View>
     </View>

@@ -1,5 +1,6 @@
 import {StatusBar} from 'expo-status-bar';
 import {
+    ScrollView,
     StyleSheet,
     TextInput,
     View
@@ -15,9 +16,11 @@ export default function App() {
     return (
         <View style={styles.container}>
             <TextInput style={styles.findWords} placeholder={'Поиск слов'}/>
-            <NextLesson/>
-            <Dictionary/>
-            <Situation/>
+            <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
+                <NextLesson/>
+                <Dictionary/>
+                <Situation/>
+            </ScrollView>
             <Menu/>
             <StatusBar style="auto"/>
         </View>
@@ -39,5 +42,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#d2d1d1',
         padding: 10,
+    },
+    scroll:{
+        width: '90%'
     }
 });

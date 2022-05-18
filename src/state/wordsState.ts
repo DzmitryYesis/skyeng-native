@@ -36,5 +36,12 @@ export const DATA_WORDS: DataWordsType[] = [
         numberOfWords: 17,
         color: '#57169c',
         picture: WORD.lastLesson
+    },
+    {
+        id: '5',
+        text: 'Проверка андроид симулятора',
+        numberOfWords: 100,
+        color: '#1df606',
+        picture: WORD.lastLesson
     }
 ]

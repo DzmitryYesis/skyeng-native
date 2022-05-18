@@ -10,7 +10,7 @@ export const Dictionary = () => (
                     <Text style={{fontSize: 30, fontWeight: '900'}}>Изучение слов</Text>
                 </View>
                 <View>
-                    <Text style={{fontSize: 20}}>0 из 4 упражнений</Text>
+                    <Text style={{fontSize: 20}}>1 из 4 упражнений</Text>
                 </View>
             </View>
             <View>
